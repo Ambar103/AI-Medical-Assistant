@@ -5,12 +5,11 @@ class EndeeVectorDB:
     def __init__(self):
         self.client = Endee()
 
-        # 🔥 Set correct base URL
+       
         self.client.set_base_url("http://localhost:8080/api/v1")
 
         self.index_name = "medical_index"
 
-        # ✅ Ensure index exists
         try:
             self.client.create_index(
                 name=self.index_name,
@@ -24,7 +23,6 @@ class EndeeVectorDB:
 
         self.index = self.client.get_index(self.index_name)
 
-        # 🔥 FLAG to prevent re-inserting repeatedly
         self.data_loaded = False
 
     def add_data(self, texts):
