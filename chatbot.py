@@ -1,6 +1,6 @@
 from transformers import pipeline
 
-generator = pipeline("text2text-generation", model="google/flan-t5-large")
+generator = pipeline("text2text-generation", model="google/flan-t5-base")
 
 def generate_answer(context, question):
     prompt = f"""
