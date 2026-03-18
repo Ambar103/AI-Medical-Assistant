@@ -23,7 +23,7 @@ Answer clearly:
 
     raw_answer = result[0]['generated_text']
 
-    # 🔥 POST-PROCESSING (THIS IS THE KEY)
+   
     causes = []
     symptoms = []
     conditions = []
@@ -40,17 +40,14 @@ Answer clearly:
             parts = text.split("symptoms include")[-1]
             symptoms.extend([s.strip() for s in parts.split(",")])
 
-        # extract condition names
         if "symptoms include" in text:
             condition = text.split(" symptoms")[0]
             conditions.append(condition.strip())
 
-    # clean duplicates
     causes_text = "\n- ".join(causes[:5])
     symptoms_text = "\n- ".join(symptoms[:5])
     conditions_text = "\n- ".join(conditions[:5])
 
-    # 🔥 FINAL STRUCTURED OUTPUT
     final_answer = f"""
 Possible causes:
 - {causes_text}
