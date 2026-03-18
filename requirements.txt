@@ -1,5 +1,8 @@
 streamlit
+transformers
 sentence-transformers
 faiss-cpu
-transformers
+endee
+requests
+accelerate
 torch

@@ -8,8 +8,22 @@ with open("data/medical_data.txt", "r") as f:
     texts = [line.strip() for line in f.readlines() if line.strip()]
 
 # Initialize DBs
+# Initialize DBs safely
 faiss_db = VectorDB(texts)
-endee_db = EndeeVectorDB()
+
+try:
+    endee_db = EndeeVectorDB()
+    endee_available = True
+
+    # Try adding data
+    try:
+        endee_db.add_data(texts)
+    except:
+        pass
+
+except Exception as e:
+    print("Endee not available:", e)
+    endee_available = False
 
 # Add data to Endee (only once ideally)
 try:
@@ -29,25 +43,30 @@ query = st.text_input("Ask your question:")
 if query:
     with st.spinner("Processing..."):
 
-        st.info("🔗 Using Endee Vector Database...")
-
-        try:
-            results = endee_db.search(query)
-            st.success(" Retrieved using Endee Vector DB")
-
-        except Exception as e:
-            st.warning(" Endee failed → using FAISS")
-            print(e)
+        if endee_available:
+            st.info("🔗 Using Endee Vector Database...")
+            try:
+                results = endee_db.search(query)
+                st.success("✅ Retrieved using Endee Vector DB")
+            except:
+                st.warning("⚠️ Endee failed → using FAISS")
+                results = faiss_db.search(query)
+        else:
+            st.warning("⚠️ Endee offline → using FAISS")
             results = faiss_db.search(query)
 
-        context = "\n".join(results)
-        answer = generate_answer(context, query)
+        # 🔥 IMPORTANT: ensure results exist
+        if not results:
+            st.error("No relevant data found.")
+        else:
+            context = "\n".join(results)
+            answer = generate_answer(context, query)
 
-    st.success("Answer ready")
+            st.success("Answer ready")
 
-    st.subheader(" Answer")
-    st.write(answer)
+            st.subheader("💡 Answer")
+            st.write(answer)
 
-    st.subheader(" Context")
-    for r in results:
-        st.write("- " + r)
+            st.subheader("📚 Context")
+            for r in results:
+                st.write("- " + r)
