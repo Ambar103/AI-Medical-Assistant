@@ -3,19 +3,15 @@ from vector_db import VectorDB
 from endee_db import EndeeVectorDB
 from chatbot import generate_answer
 
-# Load dataset
 with open("data/medical_data.txt", "r") as f:
     texts = [line.strip() for line in f.readlines() if line.strip()]
 
-# Initialize DBs
-# Initialize DBs safely
 faiss_db = VectorDB(texts)
 
 try:
     endee_db = EndeeVectorDB()
     endee_available = True
 
-    # Try adding data
     try:
         endee_db.add_data(texts)
     except:
@@ -25,14 +21,12 @@ except Exception as e:
     print("Endee not available:", e)
     endee_available = False
 
-# Add data to Endee (only once ideally)
 try:
     endee_db.data_loaded = False
     endee_db.add_data(texts)
 except Exception as e:
     print("Endee add_data error:", e)
 
-# UI
 st.set_page_config(page_title="Medical AI Assistant", layout="centered")
 
 st.title(" AI Medical Assistant")
@@ -44,18 +38,18 @@ if query:
     with st.spinner("Processing..."):
 
         if endee_available:
-            st.info("🔗 Using Endee Vector Database...")
+            st.info(" Using Endee Vector Database...")
             try:
                 results = endee_db.search(query)
-                st.success("✅ Retrieved using Endee Vector DB")
+                st.success(" Retrieved using Endee Vector DB")
             except:
-                st.warning("⚠️ Endee failed → using FAISS")
+                st.warning(" Endee failed → using FAISS")
                 results = faiss_db.search(query)
         else:
-            st.warning("⚠️ Endee offline → using FAISS")
+            st.warning(" Endee offline → using FAISS")
             results = faiss_db.search(query)
 
-        # 🔥 IMPORTANT: ensure results exist
+        
         if not results:
             st.error("No relevant data found.")
         else:
@@ -64,9 +58,9 @@ if query:
 
             st.success("Answer ready")
 
-            st.subheader("💡 Answer")
+            st.subheader(" Answer")
             st.write(answer)
 
-            st.subheader("📚 Context")
+            st.subheader(" Context")
             for r in results:
                 st.write("- " + r)
