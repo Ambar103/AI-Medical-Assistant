@@ -1,0 +1,95 @@
+Fever is a condition where body temperature rises above normal and may be caused by infections. Symptoms include high temperature, chills, sweating, headache, and fatigue.
+
+Flu symptoms include fever, chills, body aches, fatigue, and cough.
+
+COVID-19 symptoms include fever, cough, fatigue, and loss of taste or smell.
+
+Dengue symptoms include high fever, severe headache, joint pain, nausea, and rash.
+
+Typhoid symptoms include prolonged fever, weakness, stomach pain, and headache.
+
+Malaria symptoms include fever, chills, sweating, headache, nausea, and vomiting.
+
+Diabetes symptoms include increased thirst, frequent urination, fatigue, blurred vision, and weight loss.
+
+Hypertension symptoms include headache, dizziness, chest pain, and shortness of breath.
+
+Asthma symptoms include shortness of breath, wheezing, chest tightness, and coughing.
+
+Tuberculosis symptoms include persistent cough, chest pain, weight loss, fever, and night sweats.
+
+Pneumonia symptoms include cough, fever, difficulty breathing, chest pain, and fatigue.
+
+Bronchitis symptoms include cough, mucus production, fatigue, shortness of breath, and chest discomfort.
+
+Migraine symptoms include severe headache, nausea, vomiting, and sensitivity to light.
+
+Common cold symptoms include runny nose, sneezing, sore throat, cough, and mild fever.
+
+Allergy symptoms include sneezing, itching, runny nose, watery eyes, and skin rash.
+
+Food poisoning symptoms include nausea, vomiting, diarrhea, stomach cramps, and fever.
+
+Gastritis symptoms include stomach pain, nausea, vomiting, bloating, and indigestion.
+
+Appendicitis symptoms include lower right abdominal pain, nausea, vomiting, fever, and loss of appetite.
+
+Kidney stone symptoms include severe back pain, blood in urine, nausea, vomiting, and frequent urination.
+
+Urinary tract infection symptoms include burning sensation while urinating, frequent urination, cloudy urine, and pelvic pain.
+
+Liver disease symptoms include jaundice, fatigue, abdominal pain, swelling, and nausea.
+
+Hepatitis symptoms include fatigue, nausea, abdominal pain, jaundice, and dark urine.
+
+Anemia symptoms include fatigue, weakness, pale skin, dizziness, and shortness of breath.
+
+Thyroid disorder symptoms include weight changes, fatigue, mood swings, and irregular heartbeat.
+
+Depression symptoms include sadness, loss of interest, fatigue, sleep problems, and difficulty concentrating.
+
+Anxiety symptoms include excessive worry, restlessness, rapid heartbeat, sweating, and difficulty concentrating.
+
+Heart attack symptoms include chest pain, shortness of breath, sweating, nausea, and dizziness.
+
+Stroke symptoms include sudden numbness, confusion, trouble speaking, vision problems, and severe headache.
+
+Arthritis symptoms include joint pain, stiffness, swelling, and reduced motion.
+
+Osteoporosis symptoms include bone pain, fractures, and loss of height.
+
+Back pain symptoms include muscle ache, stiffness, and limited movement.
+
+Obesity symptoms include excessive body fat, fatigue, and breathing difficulty.
+
+Insomnia symptoms include difficulty falling asleep, waking up frequently, and daytime fatigue.
+
+Sleep apnea symptoms include loud snoring, breathing pauses during sleep, and daytime sleepiness.
+
+Psoriasis symptoms include red patches, itching, dry skin, and scaling.
+
+Eczema symptoms include itchy skin, redness, swelling, and dryness.
+
+Skin cancer symptoms include unusual growths, sores that do not heal, and changes in moles.
+
+Breast cancer symptoms include lump in breast, changes in shape, pain, and nipple discharge.
+
+Prostate cancer symptoms include difficulty urinating, blood in urine, and pelvic discomfort.
+
+Colon cancer symptoms include changes in bowel habits, blood in stool, fatigue, and weight loss.
+
+Lung cancer symptoms include persistent cough, chest pain, shortness of breath, and weight loss.
+
+Pancreatitis symptoms include upper abdominal pain, nausea, vomiting, and fever.
+
+Gallstones symptoms include abdominal pain, nausea, vomiting, and indigestion.
+
+Celiac disease symptoms include diarrhea, bloating, fatigue, and weight loss.
+
+Irritable bowel syndrome symptoms include abdominal pain, bloating, diarrhea, and constipation.
+
+Vertigo symptoms include dizziness, spinning sensation, nausea, and balance problems.
+
+Dehydration symptoms include thirst, dry mouth, fatigue, dizziness, and dark urine.
+
+Heatstroke symptoms include high body temperature, confusion, nausea, and rapid heartbeat.
