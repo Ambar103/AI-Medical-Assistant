@@ -1,7 +1,7 @@
-transformers
-torch
-sentence-transformers
-faiss-cpu
 streamlit
+faiss-cpu
+sentence-transformers
+torch==2.2.2
+transformers==4.37.2
+accelerate==0.27.2
 endee
-accelerate
